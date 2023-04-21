@@ -1,4 +1,4 @@
-## Web service
+## WEB SERVICE
 ### I. GIỚI THIỆU
 Web service là một ứng dụng phần mềm được thiết kế để trao đổi dữ liệu giữa các ứng dụng khác nhau qua mạng Internet sử dụng các giao thức tiêu chuẩn như HTTP, XML, JSON, SOAP, RESTful, ... Web service cho phép các ứng dụng có thể giao tiếp và trao đổi dữ liệu với nhau một cách liên tục, đáng tin cậy và độc lập với nền tảng và ngôn ngữ lập trình.
 ### II. Các khái niệm cơ bản về Web service
