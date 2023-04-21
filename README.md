@@ -102,3 +102,4 @@ Apache là một web server phổ biến và được sử dụng rộng rãi tr
 - Apache hỗ trợ nhiều hệ điều hành hơn so với Nginx, bao gồm Windows, Linux, MacOS và nhiều hơn nữa.
 - Nginx có khả năng chịu lỗi tốt hơn so với Apache khi có nhiều yêu cầu đồng thời.
 ##### Tóm lại, cả Apache và Nginx đều là các phần mềm máy chủ web được sử dụng rộng rãi trong các ứng dụng web hiện đại. Tuy nhiên, với một số yêu cầu cụ thể của ứng dụng web, người dùng có thể lựa chọn sử dụng Nginx hoặc Apache để đạt được hiệu suất và tính linh hoạt tốt nhất.
+### VIII. Cài đặt
