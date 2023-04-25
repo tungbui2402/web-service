@@ -32,6 +32,20 @@ Web service đóng vai trò quan trọng trong việc cung cấp dịch vụ và
 - Webservice có tính đồng nhất hơn API do sử dụng giao thức SOAP, trong khi API không có tính đồng nhất.
 - Webservice hỗ trợ nhiều giao thức truyền tải dữ liệu như HTTP, FTP, SMTP, và các giao thức khác, trong khi API chủ yếu sử dụng các giao thức HTTP và HTTPS.
 - API được sử dụng rộng rãi hơn Webservice trong các ứng dụng hiện đại.
+### VIII. Chi tiết các option trong config file webservice
+- Port: Đây là cổng mà webservice sẽ lắng nghe trên. Mặc định thường là port 80 cho HTTP và port 443 cho HTTPS.
+- Document root: Đây là thư mục chứa các tệp tin và thư mục được phục vụ bởi webservice. Thư mục này thường được chỉ định bằng đường dẫn tuyệt đối.
+- Server name: Đây là tên miền hoặc địa chỉ IP mà webservice sẽ phục vụ.
+- Access control: Tùy chọn này cho phép bạn quản lý quyền truy cập vào webservice của người dùng bằng cách chỉ định các quy tắc truy cập.
+- Logging: Tùy chọn này cho phép bạn cấu hình các tệp nhật ký để ghi lại các hoạt động của webservice.
+- SSL: Tùy chọn này cho phép bạn cấu hình kết nối bảo mật HTTPS bằng SSL hoặc TLS.
+- Proxy: Tùy chọn này cho phép bạn cấu hình webservice để chuyển tiếp các yêu cầu tới một server khác.
+- CGI: Tùy chọn này cho phép bạn cấu hình webservice để sử dụng các tệp CGI để thực thi các kịch bản.
+- Virtual host: Tùy chọn này cho phép bạn cấu hình nhiều tên miền khác nhau để phục vụ trên cùng một địa chỉ IP hoặc cổng.
+- MIME types: Tùy chọn này cho phép bạn cấu hình các loại MIME được hỗ trợ bởi webservice.
+- Error handling: Tùy chọn này cho phép bạn cấu hình cách xử lý các lỗi phát sinh trong quá trình thực hiện webservice.
+- Cache: Tùy chọn này cho phép bạn cấu hình bộ nhớ đệm để tăng tốc độ phục vụ của webservice.
+- Compression: Tùy chọn này cho phép bạn cấu hình nén dữ liệu để giảm kích thước tệp tin được phục vụ.
 ##### Tóm lại, Webservice và API đều là các công nghệ quan trọng để truyền tải dữ liệu giữa các ứng dụng và hệ thống khác nhau. Tùy thuộc vào yêu cầu của ứng dụng, người sử dụng có thể lựa chọn sử dụng Webservice hoặc API để tích hợp các hệ thống và truyền tải dữ liệu giữa các ứng dụng.
 
 ## NGINX
