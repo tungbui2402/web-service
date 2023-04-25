@@ -36,16 +36,16 @@ Web service đóng vai trò quan trọng trong việc cung cấp dịch vụ và
 - Port: Đây là cổng mà webservice sẽ lắng nghe trên. Mặc định thường là port 80 cho HTTP và port 443 cho HTTPS.
 - Document root: Đây là thư mục chứa các tệp tin và thư mục được phục vụ bởi webservice. Thư mục này thường được chỉ định bằng đường dẫn tuyệt đối.
 - Server name: Đây là tên miền hoặc địa chỉ IP mà webservice sẽ phục vụ.
-- Access control: Tùy chọn này cho phép bạn quản lý quyền truy cập vào webservice của người dùng bằng cách chỉ định các quy tắc truy cập.
-- Logging: Tùy chọn này cho phép bạn cấu hình các tệp nhật ký để ghi lại các hoạt động của webservice.
-- SSL: Tùy chọn này cho phép bạn cấu hình kết nối bảo mật HTTPS bằng SSL hoặc TLS.
-- Proxy: Tùy chọn này cho phép bạn cấu hình webservice để chuyển tiếp các yêu cầu tới một server khác.
-- CGI: Tùy chọn này cho phép bạn cấu hình webservice để sử dụng các tệp CGI để thực thi các kịch bản.
-- Virtual host: Tùy chọn này cho phép bạn cấu hình nhiều tên miền khác nhau để phục vụ trên cùng một địa chỉ IP hoặc cổng.
-- MIME types: Tùy chọn này cho phép bạn cấu hình các loại MIME được hỗ trợ bởi webservice.
-- Error handling: Tùy chọn này cho phép bạn cấu hình cách xử lý các lỗi phát sinh trong quá trình thực hiện webservice.
-- Cache: Tùy chọn này cho phép bạn cấu hình bộ nhớ đệm để tăng tốc độ phục vụ của webservice.
-- Compression: Tùy chọn này cho phép bạn cấu hình nén dữ liệu để giảm kích thước tệp tin được phục vụ.
+- Access control: Tùy chọn này cho phép ta quản lý quyền truy cập vào webservice của người dùng bằng cách chỉ định các quy tắc truy cập.
+- Logging: Tùy chọn này cho phép ta cấu hình các tệp nhật ký để ghi lại các hoạt động của webservice.
+- SSL: Tùy chọn này cho phép ta cấu hình kết nối bảo mật HTTPS bằng SSL hoặc TLS.
+- Proxy: Tùy chọn này cho phép ta cấu hình webservice để chuyển tiếp các yêu cầu tới một server khác.
+- CGI: Tùy chọn này cho phép ta cấu hình webservice để sử dụng các tệp CGI để thực thi các kịch bản.
+- Virtual host: Tùy chọn này cho phép ta cấu hình nhiều tên miền khác nhau để phục vụ trên cùng một địa chỉ IP hoặc cổng.
+- MIME types: Tùy chọn này cho phép ta cấu hình các loại MIME được hỗ trợ bởi webservice.
+- Error handling: Tùy chọn này cho phép ta cấu hình cách xử lý các lỗi phát sinh trong quá trình thực hiện webservice.
+- Cache: Tùy chọn này cho phép ta cấu hình bộ nhớ đệm để tăng tốc độ phục vụ của webservice.
+- Compression: Tùy chọn này cho phép ta cấu hình nén dữ liệu để giảm kích thước tệp tin được phục vụ.
 ##### Tóm lại, Webservice và API đều là các công nghệ quan trọng để truyền tải dữ liệu giữa các ứng dụng và hệ thống khác nhau. Tùy thuộc vào yêu cầu của ứng dụng, người sử dụng có thể lựa chọn sử dụng Webservice hoặc API để tích hợp các hệ thống và truyền tải dữ liệu giữa các ứng dụng.
 
 ## NGINX
@@ -74,8 +74,53 @@ Nginx là một web server mã nguồn mở phổ biến được sử dụng đ
 - Reverse proxy
 ### VI. Kết luận
 Nginx là một web server mã nguồn mở phổ biến được sử dụng để phục vụ các trang web tĩnh và động. Với khả năng xử lý tải tốt, tính ổn định cao, tính bảo mật và dễ dàng cấu hình, Nginx đã được sử dụng rộng rãi trên toàn thế giới. Tuy nhiên, Nginx cũng có nhược điểm như hạn chế về tính năng và phức tạp đối với người mới bắt đầu.
-### VIII. Cài đặt
-
+### VIII. Chi tiết các option trong config file nginx
+- worker_processes: Số lượng tiến trình worker được tạo ra bởi Nginx để xử lý các yêu cầu. Giá trị mặc định là 1, nhưng ta có thể tăng giá trị này để tận dụng tốt hơn các lõi CPU trên máy chủ.
+- worker_connections: Số lượng kết nối được phép đồng thời trên mỗi worker. Giá trị mặc định là 1024, nhưng nên tăng giá trị này nếu ta đang xử lý một lượng lớn các yêu cầu với Nginx.
+- http: Phần này định nghĩa cấu hình cho các máy chủ web HTTP. ta có thể định nghĩa các tùy chọn cho máy chủ, như cổng, tên miền, các tệp tin index mặc định và các trang báo lỗi.
+- server: Phần này định nghĩa các tùy chọn cho mỗi máy chủ web. ta có thể định nghĩa các tùy chọn cho máy chủ, như cổng, tên miền, các tệp tin index mặc định và các trang báo lỗi.
+- location: Phần này định nghĩa các tùy chọn cho mỗi vị trí URL trên mỗi máy chủ web. ta có thể định nghĩa các tùy chọn cho các vị trí URL, như cấu hình cho các tệp tin - tĩnh, các ứng dụng web và các giao thức khác nhau như HTTP và WebSocket.
+- error_log: Định nghĩa đường dẫn tới tệp log lỗi của Nginx.
+- access_log: Định nghĩa đường dẫn tới tệp log truy cập của Nginx.
+- include: Cho phép ta định nghĩa các tệp cấu hình phụ để tái sử dụng hoặc tách các cấu hình ra để quản lý dễ dàng hơn.
+### IX. Cài đặt
+- Cập nhật hệ thống:
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+- Sau đó ta tiến hành cài nginx:
+```
+sudo apt-get install nginx
+```
+- Sau đó ta tiến hành kiểm tra phiên bản của nginx:
+```
+nginx -v
+```
+Hiện thông báo `nginx version: nginx/1.18.0 (Ubuntu)` 
+- Sau đó ta kiểm tra trạng thái của nginx:
+```
+sudo systemctl status nginx
+```
+```
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2023-04-25 09:06:49 +07; 5h 41min ago
+       Docs: man:nginx(8)
+   Main PID: 1025 (nginx)
+      Tasks: 2 (limit: 949)
+     Memory: 2.5M
+     CGroup: /system.slice/nginx.service
+             ├─1025 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+             └─1026 nginx: worker process
+             Apr 25 09:06:43 2402 systemd[1]: Starting A high performance web server and a reverse proxy server...
+             Apr 25 09:06:49 2402 systemd[1]: Started A high performance web server and a reverse proxy server.
+```
+Khi hiện thông báo active(running) là nginx của chúng ta đang chạy.
+- Mở cổng truy cập http trên tường lửa:
+````
+sudo ufw allow 'Nginx HTTP'
+```
 ## APACHE
 ### I. Giới thiệu chung về Apache
 Apache là một web server phổ biến và được sử dụng rộng rãi trên toàn thế giới. Nó được phát triển bởi Apache Software Foundation và được phát hành dưới giấy phép Apache.
@@ -100,6 +145,17 @@ Apache là một web server phổ biến và được sử dụng rộng rãi tr
 - Proxy server
 - Load balancer
 - Reverse proxy
+### VII. Chi tiết các option trong config file apache
+- ServerRoot: Đường dẫn tới thư mục chứa các tệp cấu hình và các tài nguyên khác của Apache.
+- Listen: Cổng mà Apache lắng nghe yêu cầu từ client. Giá trị mặc định là 80 cho HTTP và 443 cho HTTPS.
+- ServerName: Tên miền của máy chủ web.
+- DocumentRoot: Thư mục chứa các tệp tài nguyên của trang web.
+- Directory: Phần này định nghĩa các tùy chọn cho một thư mục cụ thể trên máy chủ web.
+- VirtualHost: Phần này định nghĩa các tùy chọn cho một tên miền cụ thể trên máy chủ web.
+- LogLevel: Độ chi tiết của các thông báo lỗi được ghi vào các tệp nhật ký.
+- ErrorLog: Đường dẫn tới tệp nhật ký lỗi của Apache.
+- AccessLog: Đường dẫn tới tệp nhật ký truy cập của Apache.
+- DirectoryIndex: Các tệp mặc định được hiển thị khi truy cập vào một thư mục trên máy chủ.
 ### VI. Kết luận
 Apache là một web server phổ biến và được sử dụng rộng rãi trên toàn thế giới. Với tính ổn định cao, tính bảo mật và dễ dàng cấu hình, Apache đã được sử dụng rộng rãi trong các doanh nghiệp và tổ chức. Tuy nhiên, Apache cũng có nhược điểm như hiệu suất chưa cao và không hỗ trợ giao thức WebSocket.
 ### VII. NGINX và Apache
