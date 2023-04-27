@@ -118,7 +118,7 @@ sudo systemctl status nginx
 ```
 Khi hiện thông báo active(running) là nginx của chúng ta đang chạy.
 - Mở cổng truy cập http trên tường lửa:
-````
+```
 sudo ufw allow 'Nginx HTTP'
 ```
 ## APACHE
