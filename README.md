@@ -173,3 +173,16 @@ Apache là một web server phổ biến và được sử dụng rộng rãi tr
 - Nginx có khả năng chịu lỗi tốt hơn so với Apache khi có nhiều yêu cầu đồng thời.
 ##### Tóm lại, cả Apache và Nginx đều là các phần mềm máy chủ web được sử dụng rộng rãi trong các ứng dụng web hiện đại. Tuy nhiên, với một số yêu cầu cụ thể của ứng dụng web, người dùng có thể lựa chọn sử dụng Nginx hoặc Apache để đạt được hiệu suất và tính linh hoạt tốt nhất.
 ### VIII. Cài đặt
+- Cập nhật hệ thống:
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+- Sau đó ta tiến hành cài apache:
+```
+sudo apt-get install apache2
+```
+- Sau đó ta kiểm tra trạng thái của apache:
+```
+sudo systemctl status apache2
+```
