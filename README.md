@@ -186,3 +186,20 @@ sudo apt-get install apache2
 ```
 sudo systemctl status apache2
 ```
+```
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2023-04-27 02:09:06 UTC; 32min ago
+       Docs: https://httpd.apache.org/docs/2.4/
+   Main PID: 917 (apache2)
+      Tasks: 55 (limit: 2234)
+     Memory: 7.8M
+     CGroup: /system.slice/apache2.service
+             ├─917 /usr/sbin/apache2 -k start
+             ├─918 /usr/sbin/apache2 -k start
+             └─919 /usr/sbin/apache2 -k start
+
+Apr 27 02:09:04 1111 systemd[1]: Starting The Apache HTTP Server...
+Apr 27 02:09:06 1111 apachectl[877]: AH00558: apache2: Could not reliably determine the server's fully qualified domain>
+Apr 27 02:09:06 1111 systemd[1]: Started The Apache HTTP Server.
+```
