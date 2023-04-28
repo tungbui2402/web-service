@@ -205,3 +205,8 @@ Apr 27 02:09:06 1111 apachectl[877]: AH00558: apache2: Could not reliably determ
 Apr 27 02:09:06 1111 systemd[1]: Started The Apache HTTP Server.
 ```
 ![alt](https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/original/2X/7/771159b35c97e429247aac754ad44bf06cc1efa8.png)
+
+## Lưu ý
+Apache và Nginx là hai máy chủ web phổ biến và có thể được cài đặt trên cùng một hệ thống. Tuy nhiên, nếu chúng ta cài đặt cả hai trên cùng một máy chủ và cấu hình chúng để lắng nghe cổng mặc định của mình (Apache là cổng 80, Nginx là cổng 8080), thì ta cần phải thay đổi cấu hình của một trong hai máy chủ để tránh xung đột cổng.
+
+Ngoài ra, nếu muốn sử dụng cả hai máy chủ trên cùng một máy tính,ta có thể cấu hình Nginx để chuyển tiếp các yêu cầu tới Apache hoặc ngược lại. Việc này có thể giúp tăng hiệu suất và bảo mật của máy chủ web của mình. Tuy nhiên, việc cấu hình này phức tạp và yêu cầu kiến thức chuyên sâu về hệ thống và máy chủ web.
