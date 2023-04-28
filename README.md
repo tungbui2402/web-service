@@ -121,6 +121,7 @@ Khi hiện thông báo active(running) là nginx của chúng ta đang chạy.
 ```
 sudo ufw allow 'Nginx HTTP'
 ```
+![nginx](https://assets.digitalocean.com/articles/nginx_1604/default_page.png)
 ## APACHE
 ### I. Giới thiệu chung về Apache
 Apache là một web server phổ biến và được sử dụng rộng rãi trên toàn thế giới. Nó được phát triển bởi Apache Software Foundation và được phát hành dưới giấy phép Apache.
@@ -203,3 +204,4 @@ Apr 27 02:09:04 1111 systemd[1]: Starting The Apache HTTP Server...
 Apr 27 02:09:06 1111 apachectl[877]: AH00558: apache2: Could not reliably determine the server's fully qualified domain>
 Apr 27 02:09:06 1111 systemd[1]: Started The Apache HTTP Server.
 ```
+![alt](https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/original/2X/7/771159b35c97e429247aac754ad44bf06cc1efa8.png)
