@@ -5,13 +5,14 @@ Web service là một ứng dụng phần mềm được thiết kế để trao
 - SOAP: Sử dụng XML để truyền tải dữ liệu giữa các ứng dụng, được sử dụng trong các hệ thống phức tạp với tính bảo mật cao.
 - REST (Representational State Transfer): Sử dụng các phương thức HTTP để truyền tải dữ liệu, được sử dụng trong các ứng dụng web đơn giản với tính mở và linh hoạt cao.
 - UDDI (Universal Description, Discovery & Integration): UDDI là một tiêu chuẩn dựa trên XML để mô tả, xuất bản và tìm kiếm các dịch vụ web. UDDI là một open framework và là nền tảng độc lập. UDDI có thể giao tiếp qua SOAP, CORBA và Giao thức RMI Java. UDDI sử dụng WSDL để mô tả giao diện cho các dịch vụ web.
-### III. Ưu điểm của Web service
+### III. Ưu nhược điểm của Web service
+#### 1. Ưu điểm
 - Tính tương thích: Web service cho phép các ứng dụng khác nhau truy cập và chia sẻ dữ liệu một cách độc lập với nền tảng, ngôn ngữ hoặc hệ điều hành của ứng dụng.
 - Tính tái sử dụng: Web service có thể được sử dụng lại trong các ứng dụng khác nhau mà không cần phải viết lại mã.
 - Tính mở: Web service cho phép các ứng dụng truy cập và chia sẻ dữ liệu một cách dễ dàng và linh hoạt.
 - Tính bảo mật: Các Web service có thể được bảo mật bằng các phương thức như SSL (Secure Socket Layer) hoặc mã hóa dữ liệu.
 - Tính khả chuyển: Web service có thể được triển khai trên nhiều nền tảng khác nhau như Java, .NET, PHP, Python, v.v.
-### IV. Nhược điểm của Web service
+#### 2. Nhược điểm
 - Phức tạp: Web service có thể phức tạp và khó hiểu đối với người mới bắt đầu.
 - Tốc độ chậm: Truyền tải dữ liệu qua Web service có thể chậm hơn so với truyền tải trực tiếp giữa các ứng dụng.
 - Có thể bị lỗi: Web service có thể gây ra các lỗi như mất kết nối hoặc lỗi phần mềm.
@@ -57,13 +58,14 @@ Nginx là một web server mã nguồn mở phổ biến được sử dụng đ
 - Hỗ trợ HTTP, HTTPS, SMTP, POP3 và IMAP: Nginx có khả năng hỗ trợ nhiều giao thức khác nhau.
 - Hỗ trợ proxy: Nginx có khả năng hoạt động như một proxy server, giúp tăng cường tính bảo mật và giảm tải cho các server trong cụm.
 - Hỗ trợ giao thức WebSocket: Nginx có khả năng hỗ trợ giao thức WebSocket, giúp tăng cường tính tương tác và trải nghiệm người dùng.
-### III. Ưu điểm của Nginx
+### III. Ưu nhược điểm của Nginx
+#### 1. Ưu điểm
 - Hiệu suất cao: Nginx có khả năng xử lý hàng ngàn kết nối đồng thời với tốc độ nhanh và ít tài nguyên hơn so với các web server khác.
 - Tính ổn định cao: Nginx có khả năng chịu tải tốt và độ ổn định cao, giúp đảm bảo tính khả dụng của trang web.
 - Bảo mật: Nginx có khả năng hỗ trợ nhiều tính năng bảo mật, giúp ngăn chặn các cuộc tấn công và bảo vệ dữ liệu.
 - Dễ dàng cấu hình: Nginx có cấu trúc cấu hình đơn giản và dễ dàng, giúp người quản trị có thể điều chỉnh và tùy chỉnh dễ dàng.
 - Hỗ trợ mở rộng: Nginx có khả năng hỗ trợ nhiều module bổ sung, giúp mở rộng tính năng và sử dụng cho nhiều mục đích khác nhau.
-### IV. Nhược điểm của Nginx
+#### 2. Nhược điểm
 - Hạn chế về tính năng: Nginx không hỗ trợ các tính năng động (dynamic) như PHP hoặc Java Servlets mà cần phải sử dụng các ứng dụng bên ngoài để xử lý.
 - Phức tạp đối với người mới bắt đầu: Nginx có cấu trúc cấu hình đơn giản nhưng có thể phức tạp đối với người mới bắt đầu.
 ### V. Ứng dụng của Nginx
@@ -131,13 +133,14 @@ Apache là một web server phổ biến và được sử dụng rộng rãi tr
 - Hỗ trợ CGI, Perl, PHP và Python: Apache có khả năng hỗ trợ các ngôn ngữ lập trình phổ biến để tạo ra trang web động.
 - Hỗ trợ SSL/TLS: Apache có khả năng hỗ trợ SSL/TLS để bảo vệ dữ liệu truyền tải giữa máy khách và máy chủ.
 - Dễ dàng cấu hình: Apache có cấu trúc cấu hình đơn giản và dễ dàng, giúp người quản trị có thể điều chỉnh và tùy chỉnh dễ dàng.
-### III. Ưu điểm của Apache
+### III. Ưu nhược điểm của Apache
+#### 1. Ưu điểm
 - Tính ổn định cao: Apache có khả năng chịu tải tốt và độ ổn định cao, giúp đảm bảo tính khả dụng của trang web.
 - Tính bảo mật cao: Apache có khả năng hỗ trợ nhiều tính năng bảo mật, giúp ngăn chặn các cuộc tấn công và bảo vệ dữ liệu.
 - Hỗ trợ mở rộng: Apache có khả năng hỗ trợ nhiều module bổ sung, giúp mở rộng tính năng và sử dụng cho nhiều mục đích khác nhau.
 - Được sử dụng rộng rãi: Apache là một trong những web server phổ biến nhất trên thế giới, được sử dụng rộng rãi trong các doanh nghiệp và tổ chức.
 - Hỗ trợ cộng đồng lớn: Apache có một cộng đồng lớn và sôi động, cung cấp hỗ trợ và giải đáp các câu hỏi liên quan đến việc sử dụng Apache.
-### IV. Nhược điểm của Apache
+#### 2. Nhược điểm
 - Hiệu suất chưa cao: Apache có thể không đạt được hiệu suất cao như một số web server khác như Nginx.
 - Không hỗ trợ WebSocket: Apache không hỗ trợ giao thức WebSocket, điều này có thể khiến cho việc phát triển các ứng dụng web tương tác trở nên khó khăn.
 ### V. Ứng dụng của Apache
@@ -159,20 +162,6 @@ Apache là một web server phổ biến và được sử dụng rộng rãi tr
 - DirectoryIndex: Các tệp mặc định được hiển thị khi truy cập vào một thư mục trên máy chủ.
 ### VI. Kết luận
 Apache là một web server phổ biến và được sử dụng rộng rãi trên toàn thế giới. Với tính ổn định cao, tính bảo mật và dễ dàng cấu hình, Apache đã được sử dụng rộng rãi trong các doanh nghiệp và tổ chức. Tuy nhiên, Apache cũng có nhược điểm như hiệu suất chưa cao và không hỗ trợ giao thức WebSocket.
-### VII. NGINX và Apache
-#### Giống nhau:
-- Đều là các phần mềm máy chủ web được sử dụng để phục vụ các trang web và ứng dụng web.
-- Đều có khả năng xử lý các yêu cầu HTTP và HTTPS.
-- Đều hỗ trợ các tính năng như cân bằng tải, bộ đệm động, bộ đệm tĩnh, định tuyến URL và nhiều tính năng khác.
-- Đều có thể được cấu hình một cách linh hoạt để phù hợp với yêu cầu của các ứng dụng web khác nhau.
-- Đều có tính năng tùy chỉnh và mở rộng thông qua các module và plugin.
-#### Khác nhau:
-- Nginx được thiết kế để xử lý các yêu cầu web đồng thời nhiều hơn Apache, do đó Nginx có hiệu suất tốt hơn đối với các ứng dụng web có lưu lượng truy cập lớn.
-- Apache được sử dụng rộng rãi hơn Nginx và có thư viện module phong phú hơn, nên Apache thường được sử dụng cho các ứng dụng web phức tạp hơn.
-- Nginx sử dụng một kiến trúc tương đối đơn giản và có tiêu thụ tài nguyên ít hơn so với Apache.
-- Apache hỗ trợ nhiều hệ điều hành hơn so với Nginx, bao gồm Windows, Linux, MacOS và nhiều hơn nữa.
-- Nginx có khả năng chịu lỗi tốt hơn so với Apache khi có nhiều yêu cầu đồng thời.
-##### Tóm lại, cả Apache và Nginx đều là các phần mềm máy chủ web được sử dụng rộng rãi trong các ứng dụng web hiện đại. Tuy nhiên, với một số yêu cầu cụ thể của ứng dụng web, người dùng có thể lựa chọn sử dụng Nginx hoặc Apache để đạt được hiệu suất và tính linh hoạt tốt nhất.
 ### VIII. Cài đặt
 - Cập nhật hệ thống:
 ```
@@ -205,7 +194,20 @@ Apr 27 02:09:06 1111 apachectl[877]: AH00558: apache2: Could not reliably determ
 Apr 27 02:09:06 1111 systemd[1]: Started The Apache HTTP Server.
 ```
 ![alt](https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/original/2X/7/771159b35c97e429247aac754ad44bf06cc1efa8.png)
-
+### VII. NGINX và Apache
+#### Giống nhau:
+- Đều là các phần mềm máy chủ web được sử dụng để phục vụ các trang web và ứng dụng web.
+- Đều có khả năng xử lý các yêu cầu HTTP và HTTPS.
+- Đều hỗ trợ các tính năng như cân bằng tải, bộ đệm động, bộ đệm tĩnh, định tuyến URL và nhiều tính năng khác.
+- Đều có thể được cấu hình một cách linh hoạt để phù hợp với yêu cầu của các ứng dụng web khác nhau.
+- Đều có tính năng tùy chỉnh và mở rộng thông qua các module và plugin.
+#### Khác nhau:
+- Nginx được thiết kế để xử lý các yêu cầu web đồng thời nhiều hơn Apache, do đó Nginx có hiệu suất tốt hơn đối với các ứng dụng web có lưu lượng truy cập lớn.
+- Apache được sử dụng rộng rãi hơn Nginx và có thư viện module phong phú hơn, nên Apache thường được sử dụng cho các ứng dụng web phức tạp hơn.
+- Nginx sử dụng một kiến trúc tương đối đơn giản và có tiêu thụ tài nguyên ít hơn so với Apache.
+- Apache hỗ trợ nhiều hệ điều hành hơn so với Nginx, bao gồm Windows, Linux, MacOS và nhiều hơn nữa.
+- Nginx có khả năng chịu lỗi tốt hơn so với Apache khi có nhiều yêu cầu đồng thời.
+##### Tóm lại, cả Apache và Nginx đều là các phần mềm máy chủ web được sử dụng rộng rãi trong các ứng dụng web hiện đại. Tuy nhiên, với một số yêu cầu cụ thể của ứng dụng web, người dùng có thể lựa chọn sử dụng Nginx hoặc Apache để đạt được hiệu suất và tính linh hoạt tốt nhất.
 ## Lưu ý
 Apache và Nginx là hai máy chủ web phổ biến và có thể được cài đặt trên cùng một hệ thống. Tuy nhiên, nếu chúng ta cài đặt cả hai trên cùng một máy chủ và cấu hình chúng để lắng nghe cổng mặc định của mình (Apache là cổng 80, Nginx là cổng 8080), thì ta cần phải thay đổi cấu hình của một trong hai máy chủ để tránh xung đột cổng.
 
