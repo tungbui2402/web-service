@@ -23,9 +23,9 @@ Web service là một ứng dụng phần mềm được thiết kế để trao
 Web service đóng vai trò quan trọng trong việc cung cấp dịch vụ và chia sẻ dữ liệu giữa các ứng dụng khác nhau, đặc biệt là trong các ứng dụng web. Tuy nhiên, để sử dụng Web service hiệu quả, người phát triển cần phải hiểu rõ về các loại Web service, ưu nhược điểm của chúng và cách triển khai Web service trong các ứng dụng của mình.
 ### VII. Webservice và API
 #### 1. Giống nhau:
-- Cả Webservice và API đều là các công nghệ được sử dụng để truyền tải dữ liệu giữa các ứng dụng và hệ thống khác nhau.
-- Cả Webservice và API đều có khả năng tích hợp giữa các ứng dụng và hệ thống khác nhau.
-- Cả Webservice và API có khả năng truyền tải dữ liệu giữa các ứng dụng và hệ thống khác nhau.
+- Đều là các công nghệ được sử dụng để truyền tải dữ liệu giữa các ứng dụng và hệ thống khác nhau.
+- Đều có khả năng tích hợp giữa các ứng dụng và hệ thống khác nhau.
+- Có khả năng truyền tải dữ liệu giữa các ứng dụng và hệ thống khác nhau.
 #### 2. Khác nhau:
 - Webservice thường sử dụng giao thức SOAP (Simple Object Access Protocol) để truyền tải dữ liệu, trong khi API không bắt buộc phải sử dụng giao thức nào cụ thể.
 - Webservice thường được sử dụng để hỗ trợ các ứng dụng và hệ thống truyền tải dữ liệu giữa các nền tảng khác nhau, trong khi API thường được sử dụng để hỗ trợ các ứng dụng truy cập vào các chức năng của ứng dụng hoặc hệ thống khác.
@@ -161,11 +161,11 @@ Apache là một web server phổ biến và được sử dụng rộng rãi tr
 Apache là một web server phổ biến và được sử dụng rộng rãi trên toàn thế giới. Với tính ổn định cao, tính bảo mật và dễ dàng cấu hình, Apache đã được sử dụng rộng rãi trong các doanh nghiệp và tổ chức. Tuy nhiên, Apache cũng có nhược điểm như hiệu suất chưa cao và không hỗ trợ giao thức WebSocket.
 ### VII. NGINX và Apache
 #### Giống nhau:
-- Cả Apache và Nginx đều là các phần mềm máy chủ web được sử dụng để phục vụ các trang web và ứng dụng web.
-- Cả Apache và Nginx đều có khả năng xử lý các yêu cầu HTTP và HTTPS.
-- Cả Apache và Nginx đều hỗ trợ các tính năng như cân bằng tải, bộ đệm động, bộ đệm tĩnh, định tuyến URL và nhiều tính năng khác.
-- Cả Apache và Nginx đều có thể được cấu hình một cách linh hoạt để phù hợp với yêu cầu của các ứng dụng web khác nhau.
-- Cả Apache và Nginx đều có tính năng tùy chỉnh và mở rộng thông qua các module và plugin.
+- Đều là các phần mềm máy chủ web được sử dụng để phục vụ các trang web và ứng dụng web.
+- Đều có khả năng xử lý các yêu cầu HTTP và HTTPS.
+- Đều hỗ trợ các tính năng như cân bằng tải, bộ đệm động, bộ đệm tĩnh, định tuyến URL và nhiều tính năng khác.
+- Đều có thể được cấu hình một cách linh hoạt để phù hợp với yêu cầu của các ứng dụng web khác nhau.
+- Đều có tính năng tùy chỉnh và mở rộng thông qua các module và plugin.
 #### Khác nhau:
 - Nginx được thiết kế để xử lý các yêu cầu web đồng thời nhiều hơn Apache, do đó Nginx có hiệu suất tốt hơn đối với các ứng dụng web có lưu lượng truy cập lớn.
 - Apache được sử dụng rộng rãi hơn Nginx và có thư viện module phong phú hơn, nên Apache thường được sử dụng cho các ứng dụng web phức tạp hơn.
